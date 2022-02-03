@@ -1,4 +1,4 @@
-package parallel;
+package stepDefinations;
 
 import java.io.IOException;
 import java.util.List;
