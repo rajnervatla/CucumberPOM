@@ -16,7 +16,7 @@ public class AccountsPage {
 	public AccountsPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	public String getAccountsPageTitle() {
 		return driver.getTitle();
 	}
