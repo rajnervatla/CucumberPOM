@@ -22,4 +22,5 @@ Then user gets accounts section
 |MY WISHLISTS|
 |Home|
 And accounts section count should be 6
+Then Testing the pull functionality for the code
 
