@@ -27,9 +27,11 @@ public class ContactUsSteps {
 	@When("user fills the form from given sheetname {string} and rownumber {int}")
 	public void user_fills_the_form_from_given_sheetname_and_rownumber(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {
 		
+		try
+		{
 		ExcelReader reader = new ExcelReader();
 		List<Map<String,String>> testData = 
-				reader.getData("/Users/naveenautomationlabs/Desktop/automation.xlsx", sheetName);
+				reader.getData("C:\\Users\\rnervatl\\eclipse-workspace12\\CucumberPOM\\LatestCucumber6WithPOM\\src\\test\\resources\\testdataExcel\\contactus.xlsx", sheetName);
 		
 		String heading = testData.get(rowNumber).get("subjectheading");
 		String email = testData.get(rowNumber).get("email");
@@ -38,6 +40,10 @@ public class ContactUsSteps {
 		
 		contactUsPage.fillContactUsForm(heading, email, orderRef, message);
 
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@When("user clicks on send button")

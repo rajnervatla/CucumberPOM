@@ -16,3 +16,4 @@ And user enters password "Selenium@12345"
 And user clicks on Login button
 Then user gets the title of the page
 And page title should be "My account - My Store"
+Then CLick on ADD

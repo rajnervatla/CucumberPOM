@@ -85,6 +85,12 @@
 			<version>4.1.2</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.ralfstuckert.pdfbox-layout/pdfbox2-layout -->
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/htmlextentreporter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>htmlextentreporter</artifactId>
+    <version>1.0.0</version>
+</dependency>
 
 
 	</dependencies>
@@ -109,7 +115,7 @@
 				<version>${maven.surefire.version}</version>
 				<configuration>
 					<includes>
-						<include>**/ParallelRun.java</include>
+						<include>**/ParallelExecutionWithTestNG.java</include>
 					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>

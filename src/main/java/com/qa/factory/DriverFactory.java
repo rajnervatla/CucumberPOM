@@ -21,6 +21,8 @@ public class DriverFactory {
 	 * @return this will return tldriver.
 	 */
 	public WebDriver init_driver(String browser) {
+		
+		
 
 		System.out.println("browser value is: " + browser);
 
@@ -49,5 +51,12 @@ public class DriverFactory {
 	 */
 	public static synchronized WebDriver getDriver() {
 		return tlDriver.get();
+		
 	}
+	public void launchApplication(String url)
+	{
+		getDriver().get(url);
+	}
+	
+	
 }
