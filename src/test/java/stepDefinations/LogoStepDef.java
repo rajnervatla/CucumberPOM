@@ -19,12 +19,13 @@ public class LogoStepDef {
 	@When("^user verifies the logo$")
 	public void user_verifies_the_logo() throws Throwable {
 		hp.logotest();
+		hp.verifyDropdown();
 
 	}
 
 	@Then("^Pass the test case$")
 	public void pass_the_test_case() throws Throwable {
-		hp.passt();
+		hp.clickbtn();
 	}
 
 }

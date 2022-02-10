@@ -9,15 +9,16 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-features = { "src/test/resources/featurefiles/LoginPage.feature" },
+features = { "src/test/resources/featurefiles/AvailableLinks.feature" },
 glue = { "stepDefinations","AppHooks" }, 
 plugin = { "pretty"},
 tags="",
 monochrome = true
+//dryRun=true
 
 
 
 )
-public class TestRunner extends AbstractTestNGCucumberTests
+public class TestRunner 
 {
 }
