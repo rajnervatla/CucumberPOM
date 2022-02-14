@@ -27,4 +27,9 @@ public class AlertHandlingStepDef {
 		alp.getFontcolor();
 	}
 
+	@Then("^Fetch the table rows and cloumns$")
+	public void fetch_the_table_rows_and_cloumns() throws Throwable {
+	    alp.fetchTableData();
+	}
+
 }

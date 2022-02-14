@@ -12,7 +12,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 features = { "src/test/resources/featurefiles/AlertHandling.feature" },
 glue = { "stepDefinations","AppHooks" }, 
 plugin = { "pretty"},
-tags=" @smoke or @sanity",
+tags="  ~@smoke or ~@sanity or @table",
 monochrome = true
 //dryRun=true
 
