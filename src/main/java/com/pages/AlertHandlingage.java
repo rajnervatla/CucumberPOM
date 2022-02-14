@@ -42,5 +42,7 @@ public class AlertHandlingage {
 		System.err.println("Wow color in HEx code " + c);
 
 		System.out.println(driver.findElement(alertbuttonFont).getCssValue("font-size"));
+		System.out.println("Checking the feature branch ...");
+		System.out.println("Pushing the code to feature..");
 	}
 }

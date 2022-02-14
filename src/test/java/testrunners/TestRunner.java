@@ -9,10 +9,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-features = { "src/test/resources/featurefiles/AvailableLinks.feature" },
+features = { "src/test/resources/featurefiles/AlertHandling.feature" },
 glue = { "stepDefinations","AppHooks" }, 
 plugin = { "pretty"},
-tags="",
+tags=" @smoke or @sanity",
 monochrome = true
 //dryRun=true
 
